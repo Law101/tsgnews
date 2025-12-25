@@ -1,0 +1,24 @@
+# Source files
+src/
+test.ts
+tsconfig.json
+
+# Development
+.yarn/
+.pnp.*
+node_modules/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Reference code
+pygnews/
+
+# Misc
+*.log
+*.tgz

@@ -1,4 +1,61 @@
 {
   "name": "tsgnews",
-  "packageManager": "yarn@4.10.3"
+  "version": "0.1.0",
+  "description": "A TypeScript library for scraping Google News feeds",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "packageManager": "yarn@4.12.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --import tsx test.ts",
+    "prepublishOnly": "yarn build"
+  },
+  "keywords": [
+    "google-news",
+    "news",
+    "rss",
+    "scraper",
+    "typescript",
+    "google",
+    "feed",
+    "headlines"
+  ],
+  "author": "Lawrence Okegbemi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Law101/tsgnews.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Law101/tsgnews/issues"
+  },
+  "homepage": "https://github.com/Law101/tsgnews#readme",
+  "sideEffects": false,
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "dayjs": "^1.11.13",
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
 }

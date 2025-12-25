@@ -15,3 +15,22 @@ node_modules
 
 #!.yarn/cache
 .pnp.*
+
+# Build output
+dist/
+
+# npm
+*.tgz
+
+# Test artifacts
+coverage/
+
+# OS files
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Reference (can be removed)
+pygnews/
